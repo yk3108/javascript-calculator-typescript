@@ -1,24 +1,15 @@
 // eslint-disable-next-line no-use-before-define
-import React from "react";
+import React, { useState } from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { Pad } from "./Pad";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [display, setDisplay] = useState(0);
+  const [hasOperator, setHasOperator] = useState(false);
+  const [operator, setOperator] = useState("");
+
+  return <>hoge</>;
 };
 
 export default App;
