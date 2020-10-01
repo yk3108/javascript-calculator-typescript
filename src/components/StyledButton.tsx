@@ -3,8 +3,8 @@ import React from "react";
 import { Col, Button } from "react-bootstrap";
 
 type Props = {
-  col: "3";
-  variant: "primary";
+  col?: string;
+  variant?: string;
   id: string;
   value: string;
   onClick: () => void;
@@ -19,6 +19,11 @@ const StyledButton: React.FC<Props> = (props: Props) => {
       </Button>
     </Col>
   );
+};
+
+StyledButton.defaultProps = {
+  col: "3",
+  variant: "primary",
 };
 
 export default StyledButton;
