@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-use-before-define
-import React from "react";
-import { Col, Button } from "react-bootstrap";
+import React from 'react';
+import { Col, Button } from 'react-bootstrap';
 
 type Props = {
   col?: string;
@@ -22,8 +22,8 @@ const StyledButton: React.FC<Props> = (props: Props) => {
 };
 
 StyledButton.defaultProps = {
-  col: "3",
-  variant: "primary",
+  col: '3',
+  variant: 'primary',
 };
 
 export default StyledButton;

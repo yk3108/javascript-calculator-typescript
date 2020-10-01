@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
-import React from "react";
-import { Container, Row } from "react-bootstrap";
-import StyledButton from "./StyledButton";
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
+import StyledButton from './StyledButton';
 
 type Props = {
   onNumberButtonClick: (num: number) => void;
@@ -42,7 +42,7 @@ const Pad: React.FC<Props> = (props: Props) => {
           variant="success"
           id="divide"
           value="÷"
-          onClick={() => onOperatorButtonClick("÷")}
+          onClick={() => onOperatorButtonClick('÷')}
         />
       </Row>
       <Row>
@@ -65,7 +65,7 @@ const Pad: React.FC<Props> = (props: Props) => {
           variant="success"
           id="multiply"
           value="×"
-          onClick={() => onOperatorButtonClick("×")}
+          onClick={() => onOperatorButtonClick('×')}
         />
       </Row>
       <Row>
@@ -88,7 +88,7 @@ const Pad: React.FC<Props> = (props: Props) => {
           variant="success"
           id="subtract"
           value="－"
-          onClick={() => onOperatorButtonClick("－")}
+          onClick={() => onOperatorButtonClick('－')}
         />
       </Row>
       <Row>
@@ -112,7 +112,7 @@ const Pad: React.FC<Props> = (props: Props) => {
           variant="success"
           id="add"
           value="＋"
-          onClick={() => onOperatorButtonClick("＋")}
+          onClick={() => onOperatorButtonClick('＋')}
         />
       </Row>
       <Row>
@@ -121,7 +121,7 @@ const Pad: React.FC<Props> = (props: Props) => {
           variant="success"
           id="equals"
           value="="
-          onClick={() => onOperatorButtonClick("=")}
+          onClick={() => onOperatorButtonClick('=')}
         />
       </Row>
     </Container>
