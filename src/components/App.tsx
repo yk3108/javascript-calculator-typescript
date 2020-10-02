@@ -118,25 +118,27 @@ const App: React.FC = () => {
           <h1>JavaScript Calculator</h1>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Card>
-            <Card.Body
-              id="display"
-              className="text-right"
-              style={{ fontSize: '3rem' }}
-            >
-              {display}
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Pad
-        onNumberButtonClick={onNumberButtonClick}
-        onOperatorButtonClick={onOperatorButtonClick}
-        onClearButtonClick={onClearButtonClick}
-        onDecimalButtonClick={onDecimalButtonClick}
-      />
+      <Container className="calculator-wrapper">
+        <Row>
+          <Col>
+            <Card>
+              <Card.Body
+                id="display"
+                className="text-right"
+                style={{ fontSize: '3rem' }}
+              >
+                {display}
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Pad
+          onNumberButtonClick={onNumberButtonClick}
+          onOperatorButtonClick={onOperatorButtonClick}
+          onClearButtonClick={onClearButtonClick}
+          onDecimalButtonClick={onDecimalButtonClick}
+        />
+      </Container>
     </Container>
   );
 };
