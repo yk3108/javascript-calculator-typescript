@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Pad from './Pad';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const App: React.FC = () => {
   const [display, setDisplay] = useState('0');
