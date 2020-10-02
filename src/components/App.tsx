@@ -116,7 +116,7 @@ const App: React.FC = () => {
     <Container fluid className="text-center">
       <Row>
         <Col>
-          <h1>JavaScript Calculator</h1>
+          <h1 className="mb-5">JavaScript Calculator</h1>
         </Col>
       </Row>
       <Container className="calculator-wrapper">
@@ -126,7 +126,7 @@ const App: React.FC = () => {
               <Card.Body
                 id="display"
                 className="text-right"
-                style={{ fontSize: '3rem' }}
+                style={{ fontSize: '2rem' }}
               >
                 {display}
               </Card.Body>
